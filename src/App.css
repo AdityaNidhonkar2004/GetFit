@@ -1,5 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 body {
-  font-family: "Josefin Sans";
   background-color: #fffafb;
 }
 
@@ -7,6 +10,7 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: "Sora", sans-serif;
 }
 
 ::-webkit-scrollbar {
