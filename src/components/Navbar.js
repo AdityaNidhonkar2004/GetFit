@@ -9,33 +9,32 @@ const Navbar = () => {
       justifyContent="space-around"
       sx={{
         gap: { sm: "122px", xs: "40px" },
-        mt: { sm: "32px", xs: "20px" },
         justifyContent: "none",
       }}
-      className="px-[20px]"
+      className="  px-[20px] bg-black"
     >
       <Link to="/">
         <img
           src="https://i.pinimg.com/736x/88/f8/93/88f8934c8f2688c75caa39221b4cf4f0.jpg"
           alt="logo"
-          className="w-[58px] h-[58] mt-[20px]"
+          className="w-[40px] mt-3"
         ></img>
       </Link>
       <Stack
         direction="row"
         gap="40px"
         alignItems="flex-end"
-        className="text-xl"
+        className="text-2xl text-white"
       >
         <Link
           to="/"
-          className="hover:border-[#FFA500] hover:border-b-4 hover:duration-200"
+          className="mt-3 p-2 m-2 mx-2 px-2 hover:border-[#FFA500] hover:border-b-4 hover:duration-200"
         >
           Home
         </Link>
         <a
           href="#exercise"
-          className="hover:border-[#FFA500] hover:border-b-4 hover:duration-200"
+          className="p-2 m-2 mt-3 px-2 mx-2 hover:border-[#FFA500] hover:border-b-4 hover:duration-300 "
         >
           Exercises
         </a>
