@@ -3,14 +3,23 @@ import { Link } from "react-router-dom";
 import { Button, Stack, Typography } from "@mui/material";
 
 const ExerciseCard = ({ exercise }) => (
-  <Link className="exercise-card" to={`/exercise/${exercise.id}`}>
-    <img src={exercise.gifUrl} alt={exercise.name} loading="lazy" />
-    <Stack direction="row">
+  <Link
+    className="mx-10 shadow-xl hover:shadow-2xl rounded-3xl  w-[400px]   border border-white"
+    to={`/exercise/${exercise.id}`}
+  >
+    <img
+      src={exercise.gifUrl}
+      alt={exercise.name}
+      loading="lazy"
+      className=" p-[20px] m-[5px] "
+    />
+    <Stack direction="row" className="">
       <Button
+        className="hover:bg-green hover:text-white"
         sx={{
           ml: "21px",
-          color: "#fff",
-          background: "#FFA9A9",
+          color: "white",
+          background: "green",
           fontSize: "14px",
           borderRadius: "20px",
           textTransform: "capitalize",
@@ -19,10 +28,11 @@ const ExerciseCard = ({ exercise }) => (
         {exercise.bodyPart}
       </Button>
       <Button
+        className="hover:bg-green hover:text-white"
         sx={{
           ml: "21px",
           color: "#fff",
-          background: "#FCC757",
+          background: "orange",
           fontSize: "14px",
           borderRadius: "20px",
           textTransform: "capitalize",
@@ -32,7 +42,7 @@ const ExerciseCard = ({ exercise }) => (
       </Button>
     </Stack>
     <Typography
-      ml="21px"
+      ml="25px"
       color="#000"
       fontWeight="bold"
       sx={{ fontSize: { lg: "24px", xs: "20px" } }}
