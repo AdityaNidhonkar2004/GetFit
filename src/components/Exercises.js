@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Pagination from "@mui/material/Pagination";
 import { Box, Stack, Typography } from "@mui/material";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import ExerciseCard from "./ExerciseCard";
-// import Loader from "./Loader";
+import Loader from "./Loader";
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -45,16 +47,30 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
     window.scrollTo({ top: 1800, behavior: "smooth" });
   };
+  useEffect(() => {
+    // Initialize AOS when component mounts
+    AOS.init({
+      duration: 2000, // Duration of animation in milliseconds
+      once: false, // Whether animation should only happen once while scrolling down
+    });
+  }, []); // Empty dependency array to run effect only once
 
-  // if (!currentExercises.length) return <Loader />;
+  if (!currentExercises.length) return <Loader />;
 
   return (
-    <Box id="exercises" sx={{ mt: { lg: "109px" } }} mt="50px" p="20px">
+    <Box
+      id="exercises"
+      // sx={{ mt: { lg: "109px" } }}
+      // mt="50px"
+      p="20px"
+      className="bg-black "
+    >
       <Typography
-        variant="h4"
         fontWeight="bold"
-        sx={{ fontSize: { lg: "44px", xs: "30px" } }}
-        mb="46px"
+        sx={{ fontSize: { lg: "60px", xs: "30px" } }}
+        mb="70px"
+        className=" text-white text-center hover hover:text-red-500 cursor-pointer"
+        data-aos="zoom-out"
       >
         Showing Results
       </Typography>
