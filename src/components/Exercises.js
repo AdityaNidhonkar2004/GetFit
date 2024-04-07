@@ -32,21 +32,21 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     };
 
     fetchExercisesData();
-  }, [bodyPart]);
+  }, [bodyPart, setExercises]);
 
   // Pagination
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  const currentExercises = exercises.slice(
-    indexOfFirstExercise,
-    indexOfLastExercise
-  );
+  const currentExercises = Array.isArray(exercises)
+    ? exercises.slice(indexOfFirstExercise, indexOfLastExercise)
+    : [];
 
   const paginate = (event, value) => {
     setCurrentPage(value);
 
     window.scrollTo({ top: 1800, behavior: "smooth" });
   };
+
   useEffect(() => {
     // Initialize AOS when component mounts
     AOS.init({
@@ -58,18 +58,12 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   if (!currentExercises.length) return <Loader />;
 
   return (
-    <Box
-      id="exercises"
-      // sx={{ mt: { lg: "109px" } }}
-      // mt="50px"
-      p="20px"
-      className="bg-black "
-    >
+    <Box id="exercises" p="20px" className="bg-black">
       <Typography
         fontWeight="bold"
         sx={{ fontSize: { lg: "60px", xs: "30px" } }}
         mb="70px"
-        className=" text-white text-center hover hover:text-red-500 cursor-pointer"
+        className="text-white text-center hover hover:text-red-500 cursor-pointer"
         data-aos="zoom-out"
       >
         Showing Results
