@@ -15,7 +15,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
         Exercise Videos
       </Typography>
       <Stack
-        className="text-white "
+        className="text-white my-10 "
         justifyContent="flex-start"
         flexWrap="wrap"
         alignItems="center"

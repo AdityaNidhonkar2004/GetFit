@@ -14,11 +14,10 @@ const ExerciseCard = ({ exercise }) => {
   }, []); // Empty dependency array to run effect only once
   return (
     <Link
-      className=" mx-10 bg-gradient-to-r from-slate-900 to-slate-700 rounded-3xl  w-[400px]   border border-white hover:scale-105 hover:duration-300"
+      className=" mx-10 bg-gradient-to-r from-slate-700 to-slate-500 rounded-3xl  w-[400px]   border border-white hover:scale-105 hover:duration-300"
       to={`/exercise/${exercise.id}`}
-      data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="2000"
+     data-aos="fade-up"
+     data-aos-duration="3000"
     >
       <img
         src={exercise.gifUrl}

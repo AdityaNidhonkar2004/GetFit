@@ -13,17 +13,18 @@ const PassSection = () => {
 
   return (
     <div id="passes" className="bg-black">
-      <div className="ml-[28%] w-[550px] mt-[5%]">
+      <div className="md:ml-[28%] md:w-[550px] mt-[5%]">
         <p
-          className=" text-5xl font-extrabold text-center mb-16 border-b-4 cursor-pointer border-[#FFA500]  text-red-500"
-          data-aos="flip-up" // Add data-aos attribute with desired animation effect
+          className=" text-3xl md:text-5xl font-extrabold text-center mb-16   text-red-500"
+          data-aos="fade-up"
+          data-aos-duration="3000"// Add data-aos attribute with desired animation effect
         >
           Explore Our Passes
         </p>
       </div>
-      <div className="justify-evenly flex bg-black">
+      <div className="md:justify-evenly md:flex bg-black">
         <div
-          className="w-[300px] h-[200px] border border-white rounded-md mb-6 bg-[#2F313C] hover:bg-gray-700"
+          className="md:w-[300px] md:h-[200px] border border-white rounded-md mb-6 bg-[#2F313C] hover:bg-gray-700 m-2"
           data-aos="fade-up"
         >
           <p className="text-center text-white mt-4 text-2xl font-bold">
@@ -38,7 +39,7 @@ const PassSection = () => {
           </p>
         </div>
         <div
-          className="w-[300px] h-[200px] border border-white rounded-md mb-6 bg-[#2F313C] hover:bg-gray-700"
+          className="md:w-[300px] md:h-[200px] border border-white rounded-md mb-6 bg-[#2F313C] hover:bg-gray-700 m-2 "
           data-aos="fade-up"
         >
           <p className="text-center text-white mt-4 text-2xl font-bold">
@@ -52,7 +53,7 @@ const PassSection = () => {
           </p>
         </div>
         <div
-          className="w-[300px] h-[200px] border border-white rounded-md mb-6 bg-[#2F313C] hover:bg-gray-700"
+          className="md:w-[300px] md:h-[200px] border border-white rounded-md mb-6 bg-[#2F313C] hover:bg-gray-700 m-2"
           data-aos="fade-up"
         >
           <p className="text-center text-white mt-4 text-2xl font-bold">

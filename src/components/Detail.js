@@ -33,14 +33,14 @@ const Detail = ({ exerciseDetail }) => {
         src={gifUrl}
         alt={name}
         loading="lazy"
-        className="detail-image  ml-[8%]"
+        className="detail-image  md:ml-[8%]"
       />
       <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
         <Typography
           sx={{ fontSize: { lg: "64px", xs: "30px" } }}
           fontWeight={700}
           textTransform="capitalize"
-          className="text-red-500 hover:border-b-4 hover:border-[#FFA500] hover:duration-300 cursor-pointer"
+          className="text-red-500 cursor-pointer"
         >
           {name}
         </Typography>

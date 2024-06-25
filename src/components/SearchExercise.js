@@ -61,20 +61,23 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
     >
       <div>
         <p
-          className=" mb-[35px] text-5xl text-white font-extrabold text-center hover:text-red-500"
-          data-aos="fade-right"
+          className=" mb-[35px] text-3xl md:text-5xl  font-extrabold text-center text-red-500 cursor-pointer"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+
         >
-          Awesome Exercises You <br /> Should Know
+          Search 1300+ <br /> exercises here
         </p>
       </div>
 
       <Box position="relative" mb="72px">
-        <div data-aos="fade-left">
+        <div data-aos="fade-up"
+          data-aos-duration="3000">
           <TextField
             height="76px"
             sx={{
               input: { fontWeight: "700", border: "none", borderRadius: "4px" },
-              width: { lg: "900px", xs: "350px" },
+              width: { lg: "900px", xs: "223px"},
               backgroundColor: "#fff",
               borderStartStartRadius: "40px",
               borderBottomLeftRadius: "40px",
@@ -85,7 +88,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             type="text"
           />
           <button
-            className="px-6 py-4   bg-red-500 text-white rounded-r-full hover:bg-white hover:text-red-500 "
+            className="md:px-6 py-4   bg-red-500 text-white rounded-r-full hover:bg-white hover:text-red-500 "
             onClick={handleSearch}
           >
             Search
@@ -93,7 +96,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         </div>
         <div className=" ">
           <p
-            className="text-white text-5xl mt-[15%] font-extrabold text-center hover:text-red-500"
+            className=" text-3xl md:text-5xl mt-[25%] md:mt-[15%] font-extrabold text-center text-red-500"
             data-aos="zoom-in"
           >
             Get Exercises For Specific <br />

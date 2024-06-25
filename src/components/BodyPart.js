@@ -142,9 +142,8 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
       alignItems="center"
       justifyContent="center"
       className="text-white  hover:duration-700 hover:text-black shadow-md   hover:bg-gray-400  rounded-xl"
-      data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="2000"
+      data-aos="fade-up"
+     data-aos-duration="3000"
       sx={
         bodyPart === item
           ? {
