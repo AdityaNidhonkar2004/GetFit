@@ -17,12 +17,10 @@ const Navbar = () => {
       }}
       className="md:px-[20px] bg-black  "
     >
-      <div className="">
+
       <Link to="/">
-        <img src={LOGO} alt="logo" className="w-[80px] md:w-[180px] mt-3 md:mt-5"></img>
+        <img src={LOGO} alt="logo" className="w-[80px] md:w-[180px] mt-4 md:mt-5"></img>
       </Link>
-      </div>
-      
       <Stack
         direction="row"
         // gap="2px"
