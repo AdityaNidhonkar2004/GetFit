@@ -1,5 +1,3 @@
-# README
-
 ![GetFit Logo](https://github.com/AdityaNidhonkar2004/GetFit/blob/master/src/utils/getfit-logo.png)
 
 ## Welcome to GetFit! 🏋️‍♂️
