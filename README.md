@@ -1,6 +1,7 @@
+## Welcome to GetFit! 🏋️‍♂️
+
 ![GetFit Logo](https://github.com/AdityaNidhonkar2004/GetFit/blob/master/src/utils/getfit-logo.png)
 
-## Welcome to GetFit! 🏋️‍♂️
 
 GetFit is your go-to fitness platform with a comprehensive library of over 1300 exercises designed to help you achieve your fitness goals. Whether you're a beginner or a seasoned athlete, GetFit has something for everyone.
 
