@@ -42,5 +42,3 @@ To run GetFit locally, follow these steps:
 
 Thank you for choosing GetFit! Let's make fitness a part of your everyday life. 💪
 
-![Fitness Motivation](https://via.placeholder.com/300)
-
