@@ -71,13 +71,14 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       </div>
 
       <Box position="relative" mb="72px">
-        <div data-aos="fade-up"
+        <div className="inputBox" data-aos="fade-up"
           data-aos-duration="3000">
           <TextField
+            className="searchBox"
             height="76px"
             sx={{
               input: { fontWeight: "700", border: "none", borderRadius: "4px" },
-              width: { lg: "900px", xs: "223px"},
+              width: { md:"550px"  ,lg: "900px", xs: "223px", sm:"500px"},
               backgroundColor: "#fff",
               borderStartStartRadius: "40px",
               borderBottomLeftRadius: "40px",
@@ -88,7 +89,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             type="text"
           />
           <button
-            className="md:px-6 py-4   bg-red-500 text-white rounded-r-full hover:bg-white hover:text-red-500 "
+            className="searchButton md:px-6 py-4   bg-red-500 text-white rounded-r-full hover:bg-white hover:text-red-500 "
             onClick={handleSearch}
           >
             Search

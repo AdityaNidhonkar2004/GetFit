@@ -141,3 +141,35 @@ body {
     width: 280px;
   }
 }
+@media screen and (min-width:375px ) {
+  .searchButton{
+    width: 100px;
+  }
+}
+@media screen and (min-width:425px ) {
+  .searchButton{
+    width: 100px;
+  }
+  .inputBox{
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width:768px ) {
+  .searchButton{
+    width: 100px;
+  }
+}
+@media screen and (min-width: 1024px ) {
+  .searchButton{
+    width: 100px;
+  }
+  .inputBox{
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width:1440px ) {
+  .searchButton{
+    width: 100px;
+  }
+}
